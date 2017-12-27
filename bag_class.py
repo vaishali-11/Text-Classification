@@ -40,6 +40,8 @@ print(data)
 train = data['text'].values
 targets = data['labels'].values
 
+
+# feature extraction
 vectorizer = CountVectorizer(ngram_range=(1,1),token_pattern=r'\b\w+\b', min_df=2,lowercase=True, stop_words="english",input='filename',decode_error='ignore', strip_accents='unicode')
 X = vectorizer.fit_transform((train))
 vocab = vectorizer.get_feature_names()
