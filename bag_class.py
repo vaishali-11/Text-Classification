@@ -4,6 +4,7 @@ from sklearn.naive_bayes import MultinomialNB
 import os
 from sklearn.metrics.classification import accuracy_score
 
+# train data 
 source = [('C:\\Users\\Vaishali\\Downloads\\text\\BD\\', 'BIG DATA'),
           ('C:\\Users\\Vaishali\\Downloads\\text\\BC\\', 'BIO CHEMIST'), 
           ('C:\\Users\\Vaishali\\Downloads\\text\\HFM\\', 'HFM HYPERION'),
